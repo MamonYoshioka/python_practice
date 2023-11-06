@@ -33,3 +33,15 @@ print(n)
 
 n.pop()
 print(n)
+
+del n[0]
+print(n)
+
+del n
+# print(n)
+
+m = [1,1,2,3,4]
+print(m)
+
+m.remove(1)
+print(m)
