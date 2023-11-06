@@ -45,3 +45,25 @@ print(m)
 
 m.remove(1)
 print(m)
+
+r = [1,2,3,4,5,1,2,3]
+print(r.index(3))
+
+print(r.index(3,3))
+print(r.count(3))
+
+if 5 in r:
+  print("5 is exist!!!")
+
+
+r.sort()
+print(r)
+
+r.sort(reverse=True)
+print(r)
+
+name = 'My name is Potter.'
+print(name)
+
+to_split = name.split(' ')
+print(to_split)
