@@ -85,3 +85,43 @@ print('x=', x)
 
 print(id(x))
 print(id(y))
+
+
+# タプル
+t = (1,2,3,1,2)
+print(t)
+
+print(t[0])
+print(t[-3])
+
+# errorになる処理
+# t[0] = 100
+# print(t)
+
+
+# タプルのアンパッキング
+num_touple = (10, 20)
+print(num_touple)
+
+x ,y = num_touple
+print(x ,y)
+
+x, y = 20, 30
+print(x ,y)
+
+i = 30
+j = 40
+
+tmp = i
+i = j
+j = tmp
+
+print(i, j)
+
+
+a = 100
+b = 200
+print(a, b)
+
+a, b = b, a
+print(a,b)
