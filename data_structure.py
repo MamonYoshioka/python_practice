@@ -125,3 +125,31 @@ print(a, b)
 
 a, b = b, a
 print(a,b)
+
+
+
+# タプルの使い方
+choose_from_two = ('Apple','Ornge','Banana')
+answer = []
+
+# choose_from_two.append('Apple')
+# choose_from_two.append('Banana')
+
+"""
+上記の135,136行目を実行しようとすると、タプルにで宣言しているので以下のようなメッセージになる
+(タプルにはappendなどはできないため)
+【Error masseage】
+Traceback (most recent call last):
+  File "data_structure.py", line 135, in <module>
+    choose_from_two.append('Apple')
+AttributeError: 'tuple' object has no attribute 'append'
+"""
+
+answer.append('Apple')
+answer.append('Banana')
+
+
+print(choose_from_two)
+print(answer)
+
+
