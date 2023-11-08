@@ -152,4 +152,20 @@ answer.append('Banana')
 print(choose_from_two)
 print(answer)
 
+# 辞書型
+d = {'x':10, 'y':20}
+print(d)
 
+print(type(d))
+
+
+d['x'] = 100 # xの値の変更
+print(d)
+
+# 辞書型のメソッド
+d_1 = {'z': 100, 'w': 300}
+print(d_1)
+
+print(d_1.keys())
+print(d_1.values())
+ 
