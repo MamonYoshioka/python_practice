@@ -217,3 +217,30 @@ print('apple is', fruits['apple'], 'yen!!')
 辞書型はハッシュテーブルという検索に強い仕組みを持ってる。
 なので、なにかkeyを元に検索をかけるような仕組みを作りたい場合は辞書型を使うのがベター。
 """
+
+# 集合型
+a = {1,2,3,3,3,4,5,6,6}
+print(a)
+print(type(a))
+
+b = {2,3,4,7,8,9}
+
+print(a & b)
+
+s = {1,2,3,4,5}
+print(type(s))
+print(s)
+
+s.add(6)
+print(s)
+
+# 集合の使い方
+my_friends = {'A','B','C'}
+
+A_friends = {'B','D','E','F'}
+print(my_friends & A_friends)
+
+# 型変換
+f = ['apple','banana','apple', 'banana' ]
+kind = set(f)
+print
