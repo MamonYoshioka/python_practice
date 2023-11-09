@@ -162,10 +162,58 @@ print(type(d))
 d['x'] = 100 # xの値の変更
 print(d)
 
-# 辞書型のメソッド
-d_1 = {'z': 100, 'w': 300}
-print(d_1)
 
-print(d_1.keys())
-print(d_1.values())
- 
+# 辞書型のメソッド
+d1 = {'z': 100, 'w': 300}
+print(d1)
+
+print(d1.keys())
+print(d1.values())
+
+d2 = {'x':100, 'y':400}
+
+print(d2)
+print(d2.values())
+
+d1.update(d2)
+print(d1)
+
+print(d2.get('x'))
+d2['y'] = 200
+print(d2.get('y'))
+print(d1)
+
+d1.pop('x')
+print(d1)
+
+del d1['y']
+print(d1)
+
+print('z' in d1)
+
+# 辞書型のコピー
+x = {'a' : 1}
+y = x
+y['a'] = 1000
+print(x)
+print(y)
+
+x = {'a' : 1}
+y = x.copy()
+y['a'] = 2000
+print(x)
+print(y)
+
+# 辞書型の使い方
+fruits = {
+  'apple':100,
+  'orange':200,
+  'banana':300,
+}
+
+print('apple is', fruits['apple'], 'yen!!')
+
+"""
+辞書型はハッシュテーブルという検索に強い仕組みを持ってる。
+なので、なにかkeyを元に検索をかけるような仕組みを作りたい場合は辞書型を使うのがベター。
+"""
