@@ -100,7 +100,7 @@ if not is_ok:
     print("No")
 else:
     print("OK")
-    
+
 arr = [1,2,3,4]
 
 if arr:
@@ -108,3 +108,16 @@ if arr:
 else:
     print("Ng")
 
+
+# is
+# 基本、isはNoneかどうかを確認する際によく用いられるもの
+is_empty = None
+# print(is_empty)
+
+if is_empty is None:
+    print("None!!!!")
+
+# 1はTrueと等しいので、Trueになる
+print(1 == True)
+# 1はTrueではないので、Falseになる
+print(1 is True)
