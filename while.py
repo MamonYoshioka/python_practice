@@ -27,3 +27,9 @@ while c < 5:
 else:
     print('done')
 
+# input関数（対話型になる）
+while True:
+    word = input('Enter:')
+    if word == 'ok':
+        break
+    print('next')
