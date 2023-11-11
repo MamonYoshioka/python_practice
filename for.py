@@ -49,3 +49,29 @@ for _ in range(5):
 
 for i, fruit in enumerate(['apple','banana','orange']):
     print(i, fruit)
+
+# zip関数
+days = ['mon','tue','wed']
+fruits = ['apple','banana','orange']
+drinks = ['coffee','tea','beer']
+
+# for i in range(len(days)):
+#     print(days[i], fruits[i], drinks[i])
+
+for day, fruit, drink in zip(days, fruits, drinks):
+    print(day, fruit, drink)
+
+
+# for文で辞書の内容を処理する
+d = {'x':100, 'y':200}
+
+for k, v in d.items():
+    print(k, v)
+
+# 頻出頻度【高】
+print(d.items())
+
+"""
+d.itemsをすることで、辞書の中身をタプルでアンパッキングし、
+その後ｋとｖにその値を格納している
+"""
