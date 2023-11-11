@@ -80,3 +80,15 @@ print(r)
 
 r = test_f(300)
 print(r)
+
+# 位置引数のタプル化
+
+def say_greeting(word, *args):
+    print('word=', word)
+    for arg in  args:
+        print(arg)
+
+say_greeting('Hi.','Mike','Nancy')
+
+# t = ('Jhon', 'Nancy')
+# say_greeting('Hi!!', *t)
