@@ -40,5 +40,12 @@ for i in range(10):
 for x in range(2, 10, 3):
     print(f'x is {x}')
 
+
+# 変数に格納した数値を使わない場合は「_(アンダースコア)」を用いる
 for _ in range(5):
     print('hello')
+
+# enumerate関数 => index番号も一緒に表示してくれる
+
+for i, fruit in enumerate(['apple','banana','orange']):
+    print(i, fruit)
