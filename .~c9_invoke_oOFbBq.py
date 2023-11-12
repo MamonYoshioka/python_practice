@@ -51,7 +51,7 @@ def print_info(func):
     def wrapper(*args, **kwargs):
         print('start')
         result = func(*args, **kwargs)
-        print('end')
+
         return result
     return wrapper
 
@@ -80,43 +80,6 @@ l = ['Mon','tue','Wed','Thu','fri','sat','Sun']
 
 def change_words(words, func):
     for word in words:
-        print(func(word))
-
-# def sample_func(word):
-#     return word.capitalize()
-# sample_func = lambda word: word.capitalize()
-
-change_words(l, lambda word: word.capitalize())
-change_words(l, lambda word: word.lower())
-
-
-# ジェネレーター
-l = ['Good morning','Good afaternoon','Good night']
-
-for i in l :
-    print(i)
-
-print("###############")
-def counter(num=10):
-    for _ in range(num):
-        yield 'run'
-
-
-
-def greeting():
-    yield 'Good morning'
-    yield 'Good afternoot'
-    yield 'Good night'
-
-for g in greeting():
-    print(g)
-
-g = greeting()
-c = counter()
-
-
-print(next(g))
-print(next(c))
-print(next(g))
-print(next(c))
-print(next(g))
+        print(func(wort))
+        
+def sample_
