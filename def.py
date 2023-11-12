@@ -92,3 +92,19 @@ say_greeting('Hi.','Mike','Nancy')
 
 # t = ('Jhon', 'Nancy')
 # say_greeting('Hi!!', *t)
+
+
+# キーワード引数の辞書化
+def menu_1(**kwargs):
+    # print(kwargs)
+    for k, v in kwargs.items():
+        print(k, v)
+
+# menu_1(entree='beef', drink='coffee')
+d = {
+    'entree': 'beef',
+    'drink': 'ice coffee',
+    'desert': 'ice'
+}
+
+menu_1(**d)
