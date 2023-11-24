@@ -7,3 +7,9 @@
 Big O Notation (Big O 記法)
 安定ソート
 """
+
+"""
+重要なソートを記載
+※bogo sort => 一番簡単なソート方法
+bubble sort => 隣同士の順番を確認するソート方法
+"""
